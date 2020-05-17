@@ -1,10 +1,37 @@
-## Welcome to the Projects Page
+## Welcome to GitHub Pages
 
+You can use the [editor on GitHub](https://github.com/MichaelKrinsky/MichaelKrinsky.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-### Grocery App
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-The Grocery App was an app I designed during the COVID-19 quarantine for the purpose of limiting the amount of people who needed to go pick up groceries. With the Grocery app, several families could share a grocery list and reduce the risk of spreading the disease by requiring fewer visits to the store.
+### Markdown
 
-![Grocery List](https://octodex.github.com/images/list.png)
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
- [Grocery App](http://krinsky.org/groceryapp/ "Grocery App")
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MichaelKrinsky/MichaelKrinsky.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
