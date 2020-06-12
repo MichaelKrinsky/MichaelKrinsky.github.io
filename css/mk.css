@@ -15,9 +15,21 @@
 .project {
     background-color: Gainsboro;
     padding: 20px;
-  }  
-p {
+  } 
+.features{
+  border: 1px solid grey;
+  padding: 20px;
+  width:460px;
+  line-height: 2;
+} 
+.paragraph1 {
   border: 1px solid grey;
   padding: 10px;
-  max-width: 700px;
+  max-width: 1000px;
+}
+.summary {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  max-width: 1000px;
 }
