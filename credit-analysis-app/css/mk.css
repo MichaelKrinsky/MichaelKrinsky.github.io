@@ -29,8 +29,8 @@ table {
 
 .features{
   border: 1px solid grey;
-  padding: 20px;
-  width:460px;
+  padding: 10px;
+  width:500px;
   line-height: 2;
   font-size:25px;
 } 
@@ -50,10 +50,11 @@ table {
   border-bottom: 2px solid grey;
   padding: 25px;
   max-width: 1250px;
-  line-height: 30px;
+  line-height: 40px;
 }
 .info {
   text-align:left;
+  line-height: 40px;
 }
 .link{
   padding:30px;
