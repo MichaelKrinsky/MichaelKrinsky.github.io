@@ -60,7 +60,10 @@ th{
   background-color: lightgray;
   padding-left: 25px;
 }
-
+.info {
+  text-align:left;
+  font-size: 25px;
+}
 .features {
   font-size:35px;
   display: inline-block;

@@ -73,3 +73,7 @@ th{
   padding-left: 50px;
   padding-right: 50px;
 }
+.info {
+  text-align:left;
+  font-size: 25px;
+}
