@@ -9,95 +9,138 @@
 <body>
 
     <div class="container">
-
-        <div class="header">
-            <h1>Welcome To My Projects Page</h1>
-            <h2>Michael Krinsky</h2>
+        <div class="header navbar">
+            <table class="navtable">
+                <tr>
+            <!-- <h2>Michael Krinsky</h2>
+            <h1>Projects Resume Contact</h1>
+             -->
+                <th>
+                    <div class="dropdown">
+                        <button class="navbarbutton">Projects</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </th>
+                <th>
+                    <button> Resume</button>
+                </th>
+                <th>
+                    <h2>Michael Krinsky</h2>
+                </th>
+                <th style="text-align:right">
+                    <button class="contact">Contact</button>
+                </th>
+                </tr>
+            </table>
         </div>
+
+        <div class="main">
+            <h1>Welcome To My Projects Page Undergoing changes 5/11/23</h1>
+            <a href= "rocket-project/index.html">
+                <table class="project">
+                    <th colspan="2" class="project_header">
+                        <h2>
+                        UCI Rocket Project
+                        </h2>
+                    </th>
+                    <tr>
+                        <td>
+                            <video autoplay loop muted plays-inline class="back-video">
+                                <source src="launch_reel.mp4" type="video/mp4">
+                            </video>
+                        </td>
+                        <td class="summary">
+                            Since the beginning of my sophomore year at UCI, I have been an avionics engineer for UCI's collegiate rocket project with the goal of breaking the undergraduate launch record for a methalox powered rocket. By Spring of 2023, we successfully launched our first ever rocket, PTR(Preliminary Test Rocket), to an altitude of 9300 feet, and I have since become the team's Lead Avionics Engineer for the next liquid rocket.
+                        </td>
+                    </tr>    
+                </table>
+            </a>
+
+            <a href= "grocery-app/index.html">
+                <table class="project">
+                    <th colspan="2" class="project_header">
+                        <h2>
+                        The Grocery App
+                        </h2>
+                    </th>
+                    <tr>
+                        <td>
+                            
+                            <img src="thumbnails/grocery-list.png" alt=" App List Page" style="width:350px">
+                        
+                        </td>
+                        <td class="summary">
+                            The Grocery App is an online grocery list you can use to easily keep track of items you need to buy at the store. Developed during the Coronavirus pandemic, the app allows several families or neighbors to share a list so they can shop for each other at the grocery store. I built it using Angular and Java Web Services.
+                        </td>
+                    </tr>    
+                </table>
+            </a>
+
+            <a href= "banking-app/index.html">
+                <table class="project">
+                    <th colspan="2">
+                        <h2>
+                        The Banking Analysis App
+                        </h2>
+                    </th>
+                    <tr>
+                        <td>
+                            
+                            <img src="thumbnails/banking-app.png" alt=" App List Page" style="width:350px">
+                        
+                        </td>
+                        <td class="summary">
+                            The Banking Analysis App is a bank statement analyzer that automatically sorts your transactions into your own personalized categories. I developed this app to better keep track of my spending. I built it using Angular and Java Web Services.
+                        </td>
+                    </tr>    
+                </table>
+            </a>
+            
+            <a href= "sokoban/index.html">
+                <table class="project">
+                    <th colspan="2">
+                        <h2>
+                    Sokoban AI
+                        </h2>
+                    </th>
+                    <tr>
+                        <td>
+                            
+                            <img src="thumbnails/Sokoban.gif" alt="Sokoban" style="width:350px">
+                        
+                        </td>
+                        <td class="summary">
+                            The Sokoban game was a machine learning program that I developed with Mugared Khalifa and Sam Perelgut for a project in Artificial Intelligence. The goal of the project was to design an AI that used reinforcement learning to learn how to play Sokoban, a notoriously difficult puzzle game. 
+                        </td>
+                    </tr>    
+                </table>
+            </a>
+
+            <a href= "vision/index.html">
+                <table class="project">
+                    <th colspan="2">
+                        <h2>
+                        Machine Learning Vision Project
+                        </h2>
+                    </th>
+                    <tr>
+                        <td>
+                            
+                            <img src="vision/robot.jpg" alt=" Pi Bot" style="width:350px">
+                        
+                        </td>
+                        <td class="summary">
+                            The Machine Learning project was created to test an alternative form of vision processing using TensorFlow. I developed Pi Bot to track brightly colored balls, but he can be used to track virtually anything if you calibrate him correctly.
+                        </td>
+                    </tr>    
+                </table>
+            </a>   
         
-        <a href= "grocery-app/index.html">
-            <table>
-                <th colspan="2">
-                    <h2>
-                    The Grocery App
-                    </h2>
-                </th>
-                <tr>
-                    <td>
-                        
-                        <img src="thumbnails/grocery-list.png" alt=" App List Page" style="width:350px">
-                    
-                    </td>
-                    <td class="summary">
-                        The Grocery App is an online grocery list you can use to easily keep track of items you need to buy at the store. Developed during the Coronavirus pandemic, the app allows several families or neighbors to share a list so they can shop for each other at the grocery store. I built it using Angular and Java Web Services.
-                    </td>
-                </tr>    
-            </table>
-        </a>
-
-        <a href= "banking-app/index.html">
-            <table>
-                <th colspan="2">
-                    <h2>
-                    The Banking Analysis App
-                    </h2>
-                </th>
-                <tr>
-                    <td>
-                        
-                        <img src="thumbnails/banking-app.png" alt=" App List Page" style="width:350px">
-                    
-                    </td>
-                    <td class="summary">
-                        The Banking Analysis App is a bank statement analyzer that automatically sorts your transactions into your own personalized categories. I developed this app to better keep track of my spending. I built it using Angular and Java Web Services.
-                    </td>
-                </tr>    
-            </table>
-        </a>
-        
-        <a href= "sokoban/index.html">
-            <table>
-                <th colspan="2">
-                    <h2>
-                   Sokoban AI
-                    </h2>
-                </th>
-                <tr>
-                    <td>
-                        
-                        <img src="sokoban/sokoban.png" alt="Sokoban" style="width:350px">
-                    
-                    </td>
-                    <td class="summary">
-                        The Sokoban game was a machine learning program that I developed with Mugared Khalifa and Sam Perelgut for a project in Artificial Intelligence. The goal of the project was to design an AI that used reinforcement learning to learn how to play Sokoban, a notoriously difficult puzzle game. 
-                    </td>
-                </tr>    
-            </table>
-        </a>
-
-        <a href= "vision/index.html">
-            <table>
-                <th colspan="2">
-                    <h2>
-                    Machine Learning Vision Project
-                    </h2>
-                </th>
-                <tr>
-                    <td>
-                        
-                        <img src="vision/robot.jpg" alt=" Pi Bot" style="width:350px">
-                    
-                    </td>
-                    <td class="summary">
-                        The Machine Learning project was created to test an alternative form of vision processing using TensorFlow. I developed Pi Bot to track brightly colored balls, but he can be used to track virtually anything if you calibrate him correctly.
-                    </td>
-                </tr>    
-            </table>
-        </a>   
-       
-
+        </div>
     </div>
-
 </body>
-
 </html>
