@@ -1,7 +1,127 @@
+.navbar {
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 5;
+}
+
+.navtable{
+  width:100%;
+}
+
+.navbarbutton{
+  background-color:#212121;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border: none;
+  color: whitesmoke;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  
+}
+
+.mainlink{
+  color:white;
+  text-decoration: none;
+}
+
+.mainlink:hover{
+  color:lightgray;
+}
+
+.navbarbutton:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.navbarleft{
+  text-align: left;
+  padding-left: 32px;
+  width:30%;
+}
+
+.centerspace{
+  text-align:center;
+  width:22%;
+}
+
+.navbarright{
+  width:6%;
+  text-align:right;
+  padding-right:20px;
+}
+
+.contact{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  font-weight: 900;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.contact:hover{
+  background-color: #f1f1f1; 
+}
+
+.header {
+  background-color:#212121;
+  color: white;
+  padding: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  text-align:left;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:#3e8e41;}
+
+/*
+
+REST OF PAGE
+
+*/
+
+
 .container {
   text-align:center;
     padding: 0px;
     margin: 0px;
+    position:relative;
+    z-index: 1;
 }
 .link{
   padding:30px;
@@ -37,7 +157,7 @@ img {
   margin-right: auto;
   padding:20px;
 }
-table {
+.table1 {
   margin-left:auto; 
   margin-right:auto;
 }
@@ -55,7 +175,7 @@ table {
   max-width: 1250px;
   line-height: 40px;
 }
-th{
+.th1{
   text-align:left;
   background-color: lightgray;
   padding-left: 25px;

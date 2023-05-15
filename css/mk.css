@@ -1,23 +1,23 @@
+html, body{
+  margin: 0px;
+}
 .navbar {
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 5;
-
+  padding-left:0px;
+  margin-left: 0px;
 }
 
-.navtable{
-  width:100%; 
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .navbarbutton{
-  background-color: #ddd;
+  background-color:#212121;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
   border: none;
-  color: black;
+  color: whitesmoke;
   font-weight: 900;
-  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -26,9 +26,38 @@
   border-radius: 16px;
   
 }
-.navbarbutton:hover{
-  background-color: #f1f1f1; 
+
+.mainlink{
+  color:white;
+  text-decoration: none;
 }
+
+.mainlink:hover{
+  color:lightgray;
+}
+
+.navbarbutton:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.navbarleft{
+  text-align: left;
+  padding-left: 32px;
+  width:30%;
+}
+
+.centerspace{
+  text-align:center;
+  width:22%;
+}
+
+.navbarright{
+  width:6%;
+  text-align:right;
+  padding-right:20px;
+}
+
 .contact{
   background-color: #ddd;
   border: none;
@@ -41,8 +70,8 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  
 }
+
 .contact:hover{
   background-color: #f1f1f1; 
 }
@@ -50,7 +79,7 @@
 .header {
   background-color:#212121;
   color: white;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .dropdown {
@@ -63,6 +92,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
+  text-align:left;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -78,25 +108,18 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color:#3e8e41;}
-
-
-
-.main {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
+.whitespace{
   position:relative;
+  font-size:0px;
+  padding-bottom: 75px;
 }
-/* .body{
-    position:relative;
-    z-index: 1;
-} */
-.container {
-  text-align:center;
-    padding: 0px;
-    margin: 0px;
-    position:relative;
-    z-index: 1;
-}
+
+/*
+
+REST OF PAGE
+
+*/
+
 img {
   display: block;
   margin-left: auto;
@@ -123,12 +146,6 @@ img {
   text-decoration: underline;
 }
 
-td {
-  padding: 10px;
-}
-
-
-
 .summary {
   text-align: justify;
   padding: 10px;
@@ -136,18 +153,17 @@ td {
   max-width:500px;
 }
 
-a {
+.projectlink {
   text-decoration: none;
   color:black;
 }
 
-.back-video{
+.video{
   height : auto;
   width:350px;
 }
 @media (max-aspect-ratio: 16/9){
-   .back-video {
-      width: 100%;
+   .video {
       height : auto;
    }
-}
+} 

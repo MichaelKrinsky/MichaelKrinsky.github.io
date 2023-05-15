@@ -1,46 +1,51 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <link rel="stylesheet" href="css/mk.css">
-    <title>Michael Krinsky's Project Page</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="css/mk.css">
+        <title>Michael Krinsky's Project Page </title>
+    </head>
 
-<body>
-
-    <div class="container">
+    <body>
         <div class="header navbar">
-            <table class="navtable">
-                <tr>
-            <!-- <h2>Michael Krinsky</h2>
-            <h1>Projects Resume Contact</h1>
-             -->
-                <th>
-                    <div class="dropdown">
-                        <button class="navbarbutton">Projects</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+            <table>
+                <tr> 
+                    <th class="navbarleft">
+                        <a class ="mainlink" href="./index.html"><h2>Michael Krinsky's Project Page</h2></a>
+                    </th>
+                    <th class="centerspace">
+                    </th>
+                    <th class="navbarright">
+                        <div class="dropdown">
+                            <a href="./index.html"><button class="navbarbutton">Projects ˅</button></a>
+                            <div class="dropdown-content">
+                            <a href="rocket-project/index.html">UCI Rocket Project</a>
+                            <a href="sokoban/index.html">Sokoban AI</a>
+                            <a href="grocery-app/index.html">The Grocery App</a>
+                            <a href="banking-app/index.html">The Banking App</a>
+                            <a href="vision/index.html">Machine Learning Vision Project</a>
+                            </div>
                         </div>
-                      </div>
-                </th>
-                <th>
-                    <button> Resume</button>
-                </th>
-                <th>
-                    <h2>Michael Krinsky</h2>
-                </th>
-                <th style="text-align:right">
-                    <button class="contact">Contact</button>
-                </th>
+                    </th>
+                    <th class="navbarright">
+                        <a href="resume/index.html"><button class="navbarbutton">Resume</button></a>
+                    </th>
+                    <th class="navbarright">
+                        <a href="about/index.html"><button class="navbarbutton"> About</button></a>
+                    </th>
+                    <th class = "navbarright">
+                        <button class="contact">Contact</button>
+                    </th>
                 </tr>
             </table>
         </div>
-
-        <div class="main">
-            <h1>Welcome To My Projects Page Undergoing changes 5/11/23</h1>
-            <a href= "rocket-project/index.html">
+        <div class="whitespace">
+            <th>-</th>
+        </div>
+        <h1>Welcome To My Projects Page Undergoing changes 5/15/23</h1>
+        <div>
+            
+            <a href= "rocket-project/index.html" class="projectlink">
                 <table class="project">
                     <th colspan="2" class="project_header">
                         <h2>
@@ -49,7 +54,7 @@
                     </th>
                     <tr>
                         <td>
-                            <video autoplay loop muted plays-inline class="back-video">
+                            <video autoplay loop muted plays-inline class="video">
                                 <source src="launch_reel.mp4" type="video/mp4">
                             </video>
                         </td>
@@ -60,7 +65,7 @@
                 </table>
             </a>
 
-            <a href= "grocery-app/index.html">
+            <a href= "grocery-app/index.html" class="projectlink">
                 <table class="project">
                     <th colspan="2" class="project_header">
                         <h2>
@@ -80,9 +85,9 @@
                 </table>
             </a>
 
-            <a href= "banking-app/index.html">
+            <a href= "banking-app/index.html" class="projectlink">
                 <table class="project">
-                    <th colspan="2">
+                    <th colspan="2" class="project_header">
                         <h2>
                         The Banking Analysis App
                         </h2>
@@ -100,9 +105,9 @@
                 </table>
             </a>
             
-            <a href= "sokoban/index.html">
+            <a href= "sokoban/index.html" class="projectlink">
                 <table class="project">
-                    <th colspan="2">
+                    <th colspan="2" class="project_header">
                         <h2>
                     Sokoban AI
                         </h2>
@@ -120,9 +125,9 @@
                 </table>
             </a>
 
-            <a href= "vision/index.html">
+            <a href= "vision/index.html" class="projectlink">
                 <table class="project">
-                    <th colspan="2">
+                    <th colspan="2" class="project_header">
                         <h2>
                         Machine Learning Vision Project
                         </h2>
@@ -139,8 +144,6 @@
                     </tr>    
                 </table>
             </a>   
-        
         </div>
-    </div>
-</body>
+    </body>
 </html>
