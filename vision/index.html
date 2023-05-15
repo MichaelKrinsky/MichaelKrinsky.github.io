@@ -5,53 +5,71 @@
         <link rel="stylesheet" href="css/mk.css">
         <title>Michael Krinsky's Project Page</title>
     </head>
-
     <body>
     
-        <div class="header">
-            <h1 style="text-align: center;">Welcome to Michael Krinsky's Project Page</h1>
-            <a href="../index.html"><h2 class="back" >Return to Home</h2></a>
+        <div class="header navbar">
+            <table class="fulllength">
+                <tr>
+                    <th class="navbarleft">
+                        <a class ="mainlink" href="../index.html"><h2>Michael Krinsky's Project Page</h2></a>
+                    </th>
+                    <th class="centerspace">
+                    </th>
+                    <th class="navbarright">
+                        <div class="dropdown">
+                            <a href="../index.html"><button class="navbarbutton">Projects ˅</button></a>
+                            <div class="dropdown-content">
+                            <a href="../rocket-project/index.html">UCI Rocket Project</a>
+                            <a href="../sokoban/index.html">Sokoban AI</a>
+                            <a href="../grocery-app/index.html">The Grocery App</a>
+                            <a href="../banking-app/index.html">The Banking App</a>
+                            <a href="../vision/index.html">Machine Learning Vision Project</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../resume/index.html"><button class="navbarbutton">Resume</button></a>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../about/index.html"><button class="navbarbutton"> About</button></a>
+                    </th>
+                    <th class = "navbarright">
+                        <button class="contact">Contact</button>
+                    </th>
+                </tr>
+            </table>
         </div>
-        
+        <div class="whitespace">
+            <th>-</th>
+        </div>
+
+        <h1 class="centered" style="font-size: 300%">Pi Bot Project </h1>
         <div class="container">
-            <div class="project">
-                <table class="table-bordered table-striped">
-                    <tr>
-                        <h1>Pi Bot Project</h1>
-                    </tr>
-                    <tr>
-                        <td><img src="robot.jpg" alt="Robot" style="width:600px"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <p class="paragraph">
-                                On my robotics team, we used vision processing to help our robot navigate around the field and line itself up to a target. I created Pi Bot to learn more about how machine learning could be used as an alternative to vision processing. Pi Bot uses Tensor Flow machine learning to detect and trace objects and is controlled using a Raspberry Pi. 
-                            </p>
-                        </td>
-                    </tr>                    
-                </table>
-
-
-                <br>
-                <img src="balls.bmp" alt="Filter Feature" style="width:720px" >
-                <p class="paragraph">
-                    The machine learning software can be calibrated to detect all sorts of items like chairs and TVs, but Pi Bot uses it to detect sports balls.
-                </p>
-                <br>
-
-
-                <br>
-                <img src="controller.png" alt="Filter Feature" style="width:720px" >
-                <p class="paragraph">
-                    While Pi Bot's intended purpose is to be be driven autonomously, he can be manually driven using a robot controller in the web browser for "emergency maneuvers". This custom made robot controller can even run on your phone and can access Pi Bot from anywhere with internet access.
-                </p>
-                <br>
-
-                <br>
+            <table class="intro">
+                <tr>
+                    <td><img src="robot.jpg" alt="Robot" style="width:600px"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p class="paragraph">
+                            On my robotics team, we used vision processing to help our robot navigate around the field and line itself up to a target. I created Pi Bot to learn more about how machine learning could be used as an alternative to vision processing. Pi Bot uses Tensor Flow machine learning to detect and trace objects and is controlled using a Raspberry Pi. 
+                        </p>
+                    </td>
+                </tr>                    
+            </table>
+            <img src="balls.bmp" alt="Filter Feature" style="width:720px" >
+            <p class="paragraph">
+                The machine learning software can be calibrated to detect all sorts of items like chairs and TVs, but Pi Bot uses it to detect sports balls.
+            </p>
+            <img src="controller.png" alt="Filter Feature" style="width:720px" >
+            <p class="paragraph">
+                While Pi Bot's intended purpose is to be be driven autonomously, he can be manually driven using a robot controller in the web browser for "emergency maneuvers". This custom made robot controller can even run on your phone and can access Pi Bot from anywhere with internet access.
+            </p>
+            <div style="text-align:center">
                 <table class="info">
-                    <h1>Technologies Used</h1>
+                    <tr><h1 class="centered">Technologies Used</h1></tr>
                     <tr>
-                        <td>
+                        <td style="margin:auto">
                             <ul>
                                 <li>Raspberry Pi</li>
                                 <li>Python</li>
@@ -60,21 +78,20 @@
                             </ul>
                         </td>
                     </tr>
-                    
-                    <tr>
-                        <td>
-                            <img src="python.svg" alt="Python" style="height:100px" >
-                        </td>
-                        <td>
-                            <img src="raspberrypi.png" alt="Raspberry Pi" style="height:100px" >
-                        </td>
-                        <td>
-                            <img src="tensorflow.png" alt="Tensor Flow" style="height:150px" >
-                        </td>
+                </table>
+                <table style="margin: auto">
+                    <td>
+                        <img src="python.svg" alt="Python" style="height:100px" >
+                    </td>
+                    <td>
+                        <img src="raspberrypi.png" alt="Raspberry Pi" style="height:100px" >
+                    </td>
+                    <td>
+                        <img src="tensorflow.png" alt="Tensor Flow" style="height:150px" >
+                    </td>
                     </tr>
                 </table>
             </div>
-
         </div>
 
     </body>

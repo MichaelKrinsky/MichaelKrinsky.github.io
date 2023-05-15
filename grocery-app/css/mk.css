@@ -1,122 +1,179 @@
-
-.container {
-  text-align:center;
-    padding: 0px;
-    margin: 0px;
+html, body{
+  margin: 0px;
+  background-color: lightgray;
 }
+.navbar {
+  background-color: #212121;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 5;
+  padding-left:0px;
+  margin-left: 0px;
+}
+
+.navbarbutton{
+  background-color:#212121;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border: none;
+  color: whitesmoke;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  
+}
+
+.mainlink{
+  color:white;
+  text-decoration: none;
+}
+
+.mainlink:hover{
+  color:lightgray;
+}
+
+.navbarbutton:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.navbarleft{
+  text-align: left;
+  padding-left: 32px;
+  width:30%;
+}
+
+.centerspace{
+  text-align:center;
+  width:22%;
+}
+
+.navbarright{
+  width:6%;
+  text-align:right;
+  padding-right:20px;
+}
+
+.contact{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  font-weight: 900;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.contact:hover{
+  background-color: #f1f1f1; 
+}
+
+.header {
+  background-color:#212121;
+  color: white;
+  /* padding: 10px; */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  text-align:left;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.whitespace{
+  position:relative;
+  font-size:0px;
+  padding-bottom: 75px;
+}
+
+body{
+  background-color: lightgray;
+}
+
+.fulllength{
+  width:100%;
+}
+.centered{
+  text-align:center
+}
+
+/*
+
+REST OF PAGE
+
+*/
+
+.intro{
+  position: relative;
+  margin: auto;
+  
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding:20px;
 }
-table {
-  margin-left:auto; 
-  margin-right:auto;
-}
-
-.header {
-    background-color:#212121;
-    color: white;
-    padding: 20px;
-
-  }
-
-.project {
-    background-color: Gainsboro;
-    padding: 20px;
-  } 
-
-.features{
-  border: 1px solid grey;
-  padding: 20px;
-  width:460px;
-  line-height: 2;
-  font-size:25px;
-} 
-
-.paragraph1 {
-  border: 1px solid grey;
-  padding: 10px;
-  max-width: 125px;
-}
 
 .paragraph {
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size:25px;
-  border-top: 2px solid grey;
   border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
   padding: 25px;
   max-width: 1250px;
-  line-height: 30px;
+  line-height: 40px;
 }
+
 .info {
   text-align:left;
+  font-size: 25px;
+  margin:auto;
+  width:450px;
+
 }
-.link{
-  padding:30px;
-  font-size:40px;
-  color:white;
-  background-color: #212121;
-  text-decoration: none;
-  opacity:.9;
-}
-.link:hover{
-  opacity:1;
-}
-.back {
-  color: white;
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
- }
- a:hover{
-   text-decoration:underline;
- }
-th{
-  text-align:left;
-  background-color: lightgray;
-  padding-left: 25px;
-}
-th:hover{
+.featureheader{
+  text-align: center;
   text-decoration: underline;
 }
-td {
-  padding: 10px;
-}
-
-.header {
-    background-color:#212121;
-    color: white;
-    padding:30px;
-    text-decoration:none;
-
-  }
-
-.project {
-    background-color: Gainsboro;
-    padding: 20px;
-  } 
-.features{
-  border: 1px solid grey;
-  padding: 20px;
-  width:460px;
-  line-height: 2;
-} 
-.paragraph1 {
-  border: 1px solid grey;
-  padding: 10px;
-  max-width: 1000px;
-}
-.summary {
-  text-align: justify;
-  padding: 10px;
-  font-size: 25px;
-  max-width:500px;
-}
-.info {
-  font-size: 25px;
+.features {
+  font-size:25px;
+  display: auto;
+  text-align:left;
+  line-height: 60px;
+  border: 2px solid grey;
+  padding: 30px;
+  width:600px;
 }

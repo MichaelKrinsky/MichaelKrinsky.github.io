@@ -1,8 +1,9 @@
 html, body{
   margin: 0px;
+  background-color: lightgray;
 }
 .navbar {
-  background-color: #333;
+  background-color: #212121;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -114,6 +115,9 @@ html, body{
   padding-bottom: 75px;
 }
 
+.fulllength{
+  width:100%;
+}
 /*
 
 REST OF PAGE
@@ -126,11 +130,28 @@ img {
   margin-right: auto;
 }
 
+.intro{
+  padding-top: 50px;
+  position: relative;
+  margin: auto;
+  width:80%;
+}
 .paragraph {
   font-family: 'Montserrat', sans-serif;
-  line-height: 220%;   
+  line-height: 220%; 
+  font-size:120%;
+  padding:30px; 
 }
 
+.aboutme{
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 300%; */
+  padding:30px;
+}
+.summary{
+  padding: 40px;
+  font-size: 150%;
+}
 .bubble {
   position:relative;
   margin-top:100px;

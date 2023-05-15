@@ -1,5 +1,6 @@
 html, body{
   margin: 0px;
+  background-color: lightgray;
 }
 .navbar {
   background-color: #333;
@@ -113,6 +114,12 @@ html, body{
   font-size:0px;
   padding-bottom: 75px;
 }
+.fulllength{
+  width:100%;
+}
+.centered{
+  text-align:center
+}
 
 /*
 
@@ -133,21 +140,27 @@ img {
   position:relative;
   z-index: 3;
 }
+.boundingbox{
+  width:800px; 
+  margin:auto;
+}
+
 .project:hover{
   opacity:100%;
 }
 
 .project_header{
   text-align:left;
-  background-color: lightgray;
+  background-color: #212121;
   padding-left: 25px;
+  color:white;
 }
 .th:hover{
   text-decoration: underline;
 }
 
 .summary {
-  text-align: justify;
+  text-align: center;
   padding: 10px;
   font-size: 20px;
   max-width:500px;

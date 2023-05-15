@@ -1,13 +1,14 @@
+html, body{
+  margin: 0px;
+}
 .navbar {
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 5;
-}
-
-.navtable{
-  width:100%;
+  padding-left:0px;
+  margin-left: 0px;
 }
 
 .navbarbutton{
@@ -78,7 +79,7 @@
 .header {
   background-color:#212121;
   color: white;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .dropdown {
@@ -107,13 +108,18 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color:#3e8e41;}
+.whitespace{
+  position:relative;
+  font-size:0px;
+  padding-bottom: 75px;
+}
 
 /*
 
 REST OF PAGE
 
 */
+
 .container {
   text-align:center;
     padding: 0px;

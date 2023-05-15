@@ -8,95 +8,121 @@
 
     <body>
     
-        <div class="header">
-            <h1 style="text-align: center;">Welcome to my Project Page</h1>
-            <h2 style="text-align: center;">Michael Krinsky</h2>
-            <a href="../index.html"><h2 class="back" >Return to Home</h2></a>
+        <div class="header navbar">
+            <table class="fulllength">
+                <tr>
+                    <th class="navbarleft">
+                        <a class ="mainlink" href="../index.html"><h2>Michael Krinsky's Project Page</h2></a>
+                    </th>
+                    <th class="centerspace">
+                    </th>
+                    <th class="navbarright">
+                        <div class="dropdown">
+                            <a href="../index.html"><button class="navbarbutton">Projects ˅</button></a>
+                            <div class="dropdown-content">
+                            <a href="../rocket-project/index.html">UCI Rocket Project</a>
+                            <a href="../sokoban/index.html">Sokoban AI</a>
+                            <a href="../grocery-app/index.html">The Grocery App</a>
+                            <a href="../banking-app/index.html">The Banking App</a>
+                            <a href="../vision/index.html">Machine Learning Vision Project</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../resume/index.html"><button class="navbarbutton">Resume</button></a>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../about/index.html"><button class="navbarbutton"> About</button></a>
+                    </th>
+                    <th class = "navbarright">
+                        <button class="contact">Contact</button>
+                    </th>
+                </tr>
+            </table>
         </div>
+        <div class="whitespace">
+            <th>-</th>
+        </div>
+
+        <h1 class="centered" style="font-size: 300%">The Grocery App</h1>
+        <table class = "intro">
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                    I wanted to create an app that would help people stay safe during the COVID-19 crisis. The Grocery App helps people protect those high at risk by providing easy access to an online grocery list that is sharable between families.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="features">
+                    <p>
+                        <h1 class="centered">Features</h1>
+                        <ul style="text-align:left">
+                            <li>Optimized for mobile devices</li>
+                            <li>List sortable by store or name</li>
+                            <li>Lists are sharable between users</li>
+                            <li>Updated in real time</li>
+                            <li>Fully functioning search bar </li>
+                            <li>Password protected</li>
+                        </ul>
+                    </p>
+                </td>
+                <td><img src="grocery-list.png" alt=" App List Page" style="width:500px"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                        While designing the app, I realized how helpful this could be in protecting people from COVID-19. With the app, my family could share our grocery list with an elderly woman who couldn't risk visiting the stores herself. By using the grocery app, we were able to retrieve her items when we went to the store and help her stay safe.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
         
-        <div class="container">
-            <div class="project">
-                
-                <h1>The Grocery App</h1>
-                <table class="table-bordered table-striped">
-                    <tr>
-                        <td colspan="2">
-                            <p class="paragraph">
-                            I wanted to create an app that would help people stay safe during the COVID-19 crisis. The Grocery App helps people protect those high at risk by providing easy access to an online grocery list that is sharable between families.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="features">
-                            <p>
-                                <h1 style="text-decoration: underline;">Features</h1>
-                                <ul style="text-align:left">
-                                    <li>Optimized for mobile devices</li>
-                                    <li>List sortable by store or name</li>
-                                    <li>Lists are sharable between users</li>
-                                    <li>Updated in real time</li>
-                                    <li>Fully functioning search bar </li>
-                                    <li>Password protected</li>
-                                </ul>
-                            </p>
-                        </td>
-                        <td><img src="grocery-list.png" alt=" App List Page" style="width:500px"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <p class="paragraph">
-                                While designing the app, I realized how helpful this could be in protecting people from COVID-19. With the app, my family could share our grocery list with an elderly woman who couldn't risk visiting the stores herself. By using the grocery app, we were able to retrieve her items when we went to the store and help her stay safe.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
 
-                <br>
+        <img src="filter.png" alt="Filter Feature" style="width:720px" >
+        <p class="paragraph">
+            The grocery list has a search bar to look for specific items. It can also be sorted by store or name. These features are extremely helpful in navigating the grocery list, especially when you are collecting items for many people or families.
+        </p>
 
-                <img src="filter.png" alt="Filter Feature" style="width:720px" >
-                <p class="paragraph">
-                    The grocery list has a search bar to look for specific items. It can also be sorted by store or name. These features are extremely helpful in navigating the grocery list, especially when you are collecting items for many people or families.
-                </p>
+        
 
-                <br>
+        <h1 class="centered"> Security </h1>
+        <img src="table-id.png" alt="table ID feature">
+        <p class="paragraph">
+            The grocery list is protected by a standard username and password system that uses tokens to verify and remember who is logged in. By storing tokens in your device's local storage, you won't have to log in every time you want to use the app. The Grocery App differentiates separate lists using table ID's which specify who has access to certain grocery lists. This allows the Grocery App to handle several different lists at one time.
+        </p>
 
-                <h1 style="text-decoration: underline"> Security </h1>
-                <img src="table-id.png" alt="table ID feature">
-                <p class="paragraph">
-                    The grocery list is protected by a standard username and password system that uses tokens to verify and remember who is logged in. By storing tokens in your device's local storage, you won't have to log in every time you want to use the app. The Grocery App differentiates separate lists using table ID's which specify who has access to certain grocery lists. This allows the Grocery App to handle several different lists at one time.
-                </p>
-
-                <br>
-                <table class="info">
-                    <h1>Technologies Used</h1>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Angular Framework by Google</li>
-                                <li>HTML / CSS / JavaScript</li>
-                                <li>Java Webservice (Spring Boot)</li>
-                                <li>Java Persistence API</li>
-                                <li>MySQL Database</li>
-                                <li>Amazon EC2 Linux Server</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <img src="angular.png" alt="Angular" style="width:200px" >
-                        </td>
-                        <td>
-                            <img src="java.png" alt="Java" style="width:200px" >
-                        </td>
-                        <td>
-                            <img src="amazon.png" alt="Amazon Web Services" style="width:200px" >
-                        </td>
-                    </tr>
-                </table>
-            </div>      
+        
+        <div style="text-align:center">
+            <table class="info">
+                <tr><h1 class="centered">Technologies Used</h1></tr>
+                <tr>
+                    <td style="margin:auto">
+                        <ul>
+                            <li>Angular Framework by Google</li>
+                            <li>HTML / CSS / JavaScript</li>
+                            <li>Java Webservice (Spring Boot)</li>
+                            <li>Java Persistence API</li>
+                            <li>MySQL Database</li>
+                            <li>Amazon EC2 Linux Server</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin: auto">
+                    <td>
+                        <img src="angular.png" alt="Angular" style="width:200px" >
+                    </td>
+                    <td>
+                        <img src="java.png" alt="Java" style="width:200px" >
+                    </td>
+                    <td>
+                        <img src="amazon.png" alt="Amazon Web Services" style="width:200px" >
+                    </td>
+                </tr>
+            </table>
         </div>
-
     </body>
 
 </html>

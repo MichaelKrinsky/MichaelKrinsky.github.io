@@ -7,87 +7,117 @@
     </head>
 
     <body>
-    
-        <div class="header">
-            <h1 style="text-align: center;">Welcome to Michael Krinsky's Project Page</h1>
-            <a href="../index.html"><h2 class="back" >Return to Home</h2></a>
+        <div class="header navbar">
+            <table class="fulllength">
+                <tr>
+                    <th class="navbarleft">
+                        <a class ="mainlink" href="../index.html"><h2>Michael Krinsky's Project Page</h2></a>
+                    </th>
+                    <th class="centerspace">
+                    </th>
+                    <th class="navbarright">
+                        <div class="dropdown">
+                            <a href="./index.html"><button class="navbarbutton">Projects ˅</button></a>
+                            <div class="dropdown-content">
+                            <a href="../rocket-project/index.html">UCI Rocket Project</a>
+                            <a href="../sokoban/index.html">Sokoban AI</a>
+                            <a href="../grocery-app/index.html">The Grocery App</a>
+                            <a href="../banking-app/index.html">The Banking App</a>
+                            <a href="../vision/index.html">Machine Learning Vision Project</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../resume/index.html"><button class="navbarbutton">Resume</button></a>
+                    </th>
+                    <th class="navbarright">
+                        <a href="./index.html"><button class="navbarbutton"> About</button></a>
+                    </th>
+                    <th class = "navbarright">
+                        <button class="contact">Contact</button>
+                    </th>
+                </tr>
+            </table>
         </div>
-        
-        <div class="container">
-            <div class="project">
-                <h1 style="font-size: 300%;">The Banking Analysis App</h1>   
-                <table class="table-bordered table-striped">
-                    
-                    <tr>
-                        <td><img src="mainpage.png" alt=" App List Page" style="width:600px"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <p class="paragraph">
-                                The Banking Analysis App is a web application I designed to analyze bank statements and separate each individual transaction into different categories. While there currently exist many different apps that automatically sort transactions into pre-determined categories, these categories are not modifiable by the people that use them. I created the Banking Analysis app to allow easy management of transactions into your own personalized categories.
-                            </p>
-                        </td>
-                    </tr>                    
-                </table>
-                <br>
-                    <h1 style="text-decoration: underline;">Features</h1>
-                    <ul class = "features">
-                        <li>Fully customizable categories</li>
-                        <li>Clear visuals of category spending</li>
-                        <li>Transaction list sortable by name or category</li>
-                        <li>Smart filtering recognizes transactions from similar vendors</li>
-                        <li>Updated in real time</li>
-                    </ul>
-                    <p class = "paragraph"></p>
-                <br>
+        <div class="whitespace">
+            <th>-</th>
+        </div>
+        <h1 style="font-size: 300%; text-align:center">The Banking Analysis App</h1>
+        <table class="intro">
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                        The Banking Analysis App is a web application I designed to analyze bank statements and separate each individual transaction into different categories. I created the Banking Analysis app to allow easy management of transactions into your own personalized categories, instead of predetermined ones.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="features">
+                    <h1 class="featureheader">Features</h1>
+                    <p>
+                        <ul>
+                            <li>Fully customizable categories</li>
+                            <li>Clear visuals of category spending</li>
+                            <li>Transaction list sortable by name or category</li>
+                            <li>Smart filtering recognizes transactions from similar vendors</li>
+                            <li>Updated in real time</li>
+                        </ul>
+                    </p>
+                </td>
+                <td><img src="mainpage.png" alt=" App List Page" style="width:400px"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                        While designing the app, I realized how helpful this could be in protecting people from COVID-19. With the app, my family could share our grocery list with an elderly woman who couldn't risk visiting the stores herself. By using the grocery app, we were able to retrieve her items when we went to the store and help her stay safe.
+                    </p>
+                </td>
+            </tr>
+        </table>
 
-                <br>
+        <div>
+            <div>
                 <img src="graph.png" alt="Filter Feature" style="width:720px" >
                 <p class="paragraph">
                     The "Your Categories" page displays all of your personal categories and how they proportionally make up your grand total. This can be useful to determine what you are spending the majority of your money on. While the list does nothing to stop you from continuing to spend your money in these places, the shame brought on by a chart nearly filled with categories like "video games" and "entertainment" is a great motivator to change your habits. You can also view what transactions make up each individual category by selecting the category you wish to inspect.
                 </p>
-                <br>
-
-                <br>
                 <img src="transactionlist.png" alt="Filter Feature" style="width:720px" >
                 <p class="paragraph">
                     The "Transaction List" page divides your bank statement into individual transactions and sorts them in this list. The list can be sorted by category, name, or date.
                 </p>
-                <br>
-                <br>
                 <img src="settransactions.png" alt="table ID feature">
                 <p class="paragraph">
                     Within the "Sort Transactions" you are able to create your own categories and sort all of your transactions. When you use the buttons to assign a category to the transaction that is currently being displayed, the Banking Analysis App will search through all other transactions to find ones that are similar to it and assign them for you.
                 </p>
-
-                <br>
-                <table class="info">
-                    <h1>Technologies Used</h1>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Angular Framework by Google</li>
-                                <li>HTML / CSS / JavaScript</li>
-                                <li>Java Webservice (Spring Boot)</li>
-                                <li>Java Persistence API</li>
-                                <li>MySQL Database</li>
-                                <li>Amazon EC2 Linux Server</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <img src="angular.png" alt="Angular" style="width:200px" >
-                        </td>
-                        <td>
-                            <img src="java.png" alt="Java" style="width:200px" >
-                        </td>
-                        <td>
-                            <img src="amazon.png" alt="Amazon Web Services" style="width:200px" >
-                        </td>
-                    </tr>
-                </table>
+                <div>
+                    <table class="info">
+                        <tr><h1 class="centered">Technologies Used</h1></tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Angular Framework by Google</li>
+                                    <li>HTML / CSS / JavaScript</li>
+                                    <li>Java Webservice (Spring Boot)</li>
+                                    <li>Java Persistence API</li>
+                                    <li>MySQL Database</li>
+                                    <li>Amazon EC2 Linux Server</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="margin: auto">
+                            <td>
+                                <img src="angular.png" alt="Angular" style="width:200px" >
+                            </td>
+                            <td>
+                                <img src="java.png" alt="Java" style="width:200px" >
+                            </td>
+                            <td>
+                                <img src="amazon.png" alt="Amazon Web Services" style="width:200px" >
+                            </td>
+                        </tr>
+                    </table>
+                </div>  
             </div>
         </div>
 

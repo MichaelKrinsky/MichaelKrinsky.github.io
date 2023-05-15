@@ -8,67 +8,90 @@
 
     <body>
     
-        <div class="header">
-            <h1 style="text-align: center;">Welcome to Michael Krinsky's Project Page</h1>
-            <a href="../index.html"><h2 class="back" >Return to Home</h2></a>
+        <div class="header navbar">
+            <table class="fulllength">
+                <tr>
+                    <th class="navbarleft">
+                        <a class ="mainlink" href="../index.html"><h2>Michael Krinsky's Project Page</h2></a>
+                    </th>
+                    <th class="centerspace">
+                    </th>
+                    <th class="navbarright">
+                        <div class="dropdown">
+                            <a href="../index.html"><button class="navbarbutton">Projects ˅</button></a>
+                            <div class="dropdown-content">
+                            <a href="../rocket-project/index.html">UCI Rocket Project</a>
+                            <a href="../sokoban/index.html">Sokoban AI</a>
+                            <a href="../grocery-app/index.html">The Grocery App</a>
+                            <a href="../banking-app/index.html">The Banking App</a>
+                            <a href="../vision/index.html">Machine Learning Vision Project</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../resume/index.html"><button class="navbarbutton">Resume</button></a>
+                    </th>
+                    <th class="navbarright">
+                        <a href="../about/index.html"><button class="navbarbutton"> About</button></a>
+                    </th>
+                    <th class = "navbarright">
+                        <button class="contact">Contact</button>
+                    </th>
+                </tr>
+            </table>
         </div>
-        
-        <div class="container">
-            <div class="project">
-                <h1 style="font-size: 300%;">Sokoban AI</h1>         
-                <table class="table-bordered table-striped">
-                    <tr>
-                        <td class="features" colspan="2">
-                            <p>
-                                <h1 style="text-decoration: underline;">The Rules</h1>
-                                <ul style="text-align:left">
-                                    <li>Player can move horizontally and vertically between empty spaces</li>
-                                    <li>Player cannot walk through boxes or walls</li>
-                                    <li>Player can push boxes into empty squares</li>
-                                    <li>Boxes cannot be pulled</li>
-                                    <li>Puzzle is solved when all boxes are in storage locations(red dots)</li>
-                                </ul>
-                            </p>
-                        </td>
-                        <td><img src="boards.gif" alt="Sample Sokoban Game" style="width:500px"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <p class="paragraph">
-                                When it comes to writing code that is going to be run thousands or even millions of times, like in the case of our pathfinding and move determination algorithms for Sokoban, we had to write them as efficiently as possible to reduce runtime. Because of this, a lot of time had to be devoted to optimizing existing algorithms that had already been written for our specific problem.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+        <div class="whitespace">
+            <th>-</th>
+        </div>
+        <h1 class="centered" style="font-size: 300%">Sokoban AI</h1>
+        <table class="intro">
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                    I wanted to create an app that would help people stay safe during the COVID-19 crisis. The Grocery App helps people protect those high at risk by providing easy access to an online grocery list that is sharable between families.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="features">
+                    <h1 class="featureheader">The Rules</h1>
+                    <p>
+                        <ul>
+                            <li>Player can move horizontally and vertically between empty spaces</li>
+                            <li>Player cannot walk through boxes or walls</li>
+                            <li>Player can push boxes into empty squares</li>
+                            <li>Boxes cannot be pulled</li>
+                            <li>Puzzle is solved when all boxes are in storage locations(red dots)</li>
+                        </ul>
+                    </p>
+                </td>
+                <td><img src="boards.gif" alt="Sample Sokoban Game" style="width:500px"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="paragraph">
+                        When it comes to writing code that is going to be run thousands or even millions of times, like in the case of our pathfinding and move determination algorithms for Sokoban, we had to write them as efficiently as possible to reduce runtime. Because of this, a lot of time had to be devoted to optimizing existing algorithms that had already been written for our specific problem.
+                    </p>
+                </td>
+            </tr>
+        </table>
 
-
-                <br>
-                <img src="pathfinder.gif" alt="Filter Feature" style="width:720px" >
-                <p class="paragraph">
-                    For our path finding, we used a variant of the breadth-first search algorithm. The algorithm is used to find all reachable moves from the player's current position by checking all reachable locations a distance d from the starting location. The algorithm keeps checking further and further away until all reachable spaces have been explored and their distances recorded.
-                </p>
-                <br>
-
-
-                <br>
-                <img src="backtrack.gif" alt="Backtracking" style="width:720px" >
-                <p class="paragraph">
-                   Once we've found all our possible moves and chosen which box to push, we use a backtracking search to find the path from the box to the players location. Since the distance of each location from the player is stored, we can work our way back from the box by taking steps that decrease our distance from the player, which also finds the shortest path back.
-                </p>
-                <br>
-
-
-                <br>
-                <img src="mdp.png" alt="Markov Decision Process" style="width:720px" >
-                <p class="paragraph">
-                   We use a markov decision process with Q-learning to determine which move we want to do next. Our Q-function finds the 'value' of being in each state and rewards the AI for making a good move, so the AI learns when it does well.
-                </p>
-                <br>
-
-
-                <br>
+        <div>
+            <img src="pathfinder.gif" alt="Filter Feature" style="width:720px" >
+            <p class="paragraph">
+                For our path finding, we used a variant of the breadth-first search algorithm. The algorithm is used to find all reachable moves from the player's current position by checking all reachable locations a distance d from the starting location. The algorithm keeps checking further and further away until all reachable spaces have been explored and their distances recorded.
+            </p>
+            <img src="backtrack.gif" alt="Backtracking" style="width:720px" >
+            <p class="paragraph">
+                Once we've found all our possible moves and chosen which box to push, we use a backtracking search to find the path from the box to the players location. Since the distance of each location from the player is stored, we can work our way back from the box by taking steps that decrease our distance from the player, which also finds the shortest path back.
+            </p>
+            <img src="mdp.png" alt="Markov Decision Process" style="width:720px" >
+            <p class="paragraph">
+                We use a markov decision process with Q-learning to determine which move we want to do next. Our Q-function finds the 'value' of being in each state and rewards the AI for making a good move, so the AI learns when it does well.
+            </p>
+            <div>
                 <table class="info">
-                    <h1>Technologies Used</h1>
+                    <tr><h1 class="centered">Technologies Used</h1></tr>
                     <tr>
                         <td>
                             <ul>
@@ -77,8 +100,8 @@
                             </ul>
                         </td>
                     </tr>
-                    
-                    <tr>
+                </table>
+                <table style="margin: auto">
                         <td>
                             <img src="python.svg" alt="Python" style="height:100px" >
                         </td>
@@ -87,10 +110,8 @@
                         </td>
                     </tr>
                 </table>
-            </div>
-
+            </div>  
         </div>
-
     </body>
 
 </html>
