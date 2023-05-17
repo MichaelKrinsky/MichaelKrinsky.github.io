@@ -1,6 +1,7 @@
 html, body{
   margin: 0px;
   background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar {
   background-color: #212121;
@@ -113,6 +114,10 @@ html, body{
   position:relative;
   font-size:0px;
   padding-bottom: 75px;
+}
+
+body{
+  background-color: lightgray;
 }
 
 .fulllength{

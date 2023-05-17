@@ -1,9 +1,11 @@
 html, body{
   margin: 0px;
   background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
+  line-height:180%;
 }
 .navbar {
-  background-color: #333;
+  background-color: #212121;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -114,6 +116,11 @@ html, body{
   font-size:0px;
   padding-bottom: 75px;
 }
+
+body{
+  background-color: lightgray;
+}
+
 .fulllength{
   width:100%;
 }
@@ -135,13 +142,18 @@ img {
 .project {
   margin-left:auto; 
   margin-right:auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   opacity:80%;
   position:relative;
   z-index: 3;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  box-shadow: 0 40px 40px rgba(0,0,0,.25);
+  overflow: hidden;
 }
 .boundingbox{
-  width:800px; 
+  width:1000px; 
   margin:auto;
 }
 
@@ -163,7 +175,7 @@ img {
   text-align: center;
   padding: 10px;
   font-size: 20px;
-  max-width:500px;
+  max-width:600px;
 }
 
 .projectlink {
@@ -173,7 +185,7 @@ img {
 
 .video{
   height : auto;
-  width:350px;
+  width:450px;
 }
 @media (max-aspect-ratio: 16/9){
    .video {

@@ -1,5 +1,7 @@
 html, body{
   margin: 0px;
+  background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar {
   background-color: #212121;
@@ -117,6 +119,7 @@ html, body{
 body{
   background-color: lightgray;
 }
+
 .fulllength{
   width:100%;
 }

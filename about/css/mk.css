@@ -1,6 +1,7 @@
 html, body{
   margin: 0px;
   background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar {
   background-color: #212121;
@@ -115,15 +116,22 @@ html, body{
   padding-bottom: 75px;
 }
 
+body{
+  background-color: lightgray;
+}
+
 .fulllength{
   width:100%;
 }
+.centered{
+  text-align:center
+}
+
 /*
 
 REST OF PAGE
 
 */
-
 img {
   display: block;
   margin-left: auto;

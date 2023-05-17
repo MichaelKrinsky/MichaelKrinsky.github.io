@@ -3,7 +3,7 @@
 
     <head>
         <link rel="stylesheet" href="css/mk.css">
-        <title>Michael Krinsky's Project Page </title>
+        <title>Michael Krinsky's UCI Rocket Project</title>
     </head>
 
     <body>
@@ -31,10 +31,7 @@
                         <a href="../resume/index.html"><button class="navbarbutton">Resume</button></a>
                     </th>
                     <th class="navbarright">
-                        <a href="./index.html"><button class="navbarbutton"> About</button></a>
-                    </th>
-                    <th class = "navbarright">
-                        <button class="contact">Contact</button>
+                        <a href="../about/index.html"><button class="contact"> About</button></a>
                     </th>
                 </tr>
             </table>
@@ -42,17 +39,71 @@
         <div class="whitespace">
             <th>-</th>
         </div>
-        
-        <div class="container">
-            <div class="project">
-                <h1 style="font-size: 300%;">UCI Rocket Project</h1>   
-                
-            </div>
-            <div class = "hero">
-                <video controls class="back-video">
-                    <source src="launch_reel.mp4" type="video/mp4">
-                </video>
-            </div>
+
+       
+        <h1 class="centered" style="font-size: 300%">UCI Rocket Project</h1>
+        <div class="centered">
+        <video controls muted class="video">
+            <source src="launch_reel.mp4" type="video/mp4">
+        </video>
+        <p class="paragraph">
+            The UCI Rocket project is a team of undergraduate students that is working to break the undergraduate launch record for methalox rockets. I joined the team my sophomore year, and since then, we successfully launched UCI's first ever methalox rocket and I have become the Lead Avionics Engineer for the team.
+        </p>
+        </div>
+        <div class="centered">
+            <img src="av.jpg" alt="Avionics Team" class="photo">
+        </div>
+        <p class="paragraph">
+            The avionics team is responsible for researching, developing, and testing the electronic systems and software needed to launch and recover the rocket. During my first year on the team, I developed the software that was used to control and monitor UCI's first methalox rocket during its maiden launch. 
+        </p>
+        <div class="centered">
+            <h1>Engine Control Unit</h1>
+            <img src="ECU.jpg" alt="Engine Control Unit" class="photo">
+        </div>
+        <p class="paragraph">
+           The Engine Control Unit(ECU) was designed to be the brain of our rocket. It used a Teensy microcontroller running Arduino(C++) to control valve states and gather temperature and pressure readings on the rocket. I developed the code the ECU used to interpret signals from our ground station and translate them into actuating valves on our rocket. 
+        </p>
+        <div class="centered">
+            <h1>Avionics Flight Sensors</h1>
+            <img src="AFS.jpg" alt="Avionics Flight Systems" class="photo">
+            <img src="telemetry.png" alt="telemetry" class="photo">
+        </div>
+        <p class="paragraph">
+           The Avionics Flight System(AFS) is responsible for radio communication during flight and transmitting telemetry data to the ground station. I developed software AFS used to integrate with the ECU and retrieve solenoid valve states, tank pressures, and tank temperatures using I2C. 
+        </p>
+        </div>
+        <div class="centered">
+            <h1>CLI</h1>
+            <img src="cli.png" alt="CLI example" class="photo">
+        </div>
+        <p class="paragraph">
+            I also developed our CLI to allow us to test the rocket without setting up our ground station equipment. The CLI is written in python and uses an internet router connected to the rocket and an open wifi network to allow any laptop to connect to the rocket over wifi. This way, we could actuate valves on the rocket without the need for the switch box. 
+        </p>
+        <div class="centered">
+            <table class="info">
+                <tr><h1>Technologies Used</h1></tr>
+                <tr>
+                    <td style="margin:auto">
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Arduino</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin: auto">
+                    <td>
+                        <img src="python.png" alt="Python" style="width:200px" >
+                    </td>
+                    <td>
+                        <img src="cpp.png" alt="C++" style="width:200px" >
+                    </td>
+                    <td>
+                        <img src="arduino.png" alt="Arduino" style="width:200px" >
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 

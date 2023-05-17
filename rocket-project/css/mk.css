@@ -1,8 +1,10 @@
 html, body{
   margin: 0px;
+  background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar {
-  background-color: #333;
+  background-color: #212121;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -114,26 +116,73 @@ html, body{
   padding-bottom: 75px;
 }
 
+body{
+  background-color: lightgray;
+}
+
+.fulllength{
+  width:100%;
+}
+.centered{
+  text-align:center
+}
+
 /*
 
 REST OF PAGE
 
 */
 
-.container {
-  text-align:center;
-    padding: 0px;
-    margin: 0px;
+.intro{
+  position: relative;
+  margin: auto;
+  
 }
 
-
-.back-video{
-  width: 100%;
-  height : auto;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:20px;
 }
-@media (max-aspect-ratio: 16/9){
-   .back-video {
-      width: 100%;
-      height : auto;
-   }
+
+.paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size:25px;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
+  padding: 25px;
+  width: 1250px;
+  line-height: 40px;
+}
+
+.info {
+  text-align:left;
+  font-size: 25px;
+  margin:auto;
+  width:300px;
+
+}
+.featureheader{
+  text-align: center;
+  text-decoration: underline;
+}
+.features {
+  font-size:25px;
+  display: auto;
+  text-align:left;
+  line-height: 60px;
+  border: 2px solid grey;
+  padding: 30px;
+  width:600px;
+}
+.video{
+  width: 1250px;
+  clip-path: inset(1px 1px);
+}
+.photo{
+  width: 600px;
+  display:inline;
 }
