@@ -1,0 +1,126 @@
+html, body {
+  margin: 0px;
+  background-color: lightgray;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: var(--mk-gray-900);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width */
+  height:50px;
+  z-index: 5;
+}
+
+
+.mainlink {
+  color: white;
+  text-decoration: none;
+}
+
+.mainlink:hover {
+  color: lightgray;
+}
+
+.mainlink h2 {
+
+  margin: 0;
+}
+
+
+.header {
+  background-color: var(--mk-gray-900);
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  transform: skew(-20deg); /* Skew the dropdown section */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top:50px;
+  margin-left:30px;
+  background-color: var(--mk-gray-700);
+  color:white;
+  text-align: left;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-20px) skew(20deg); /* Start above, and reverse skew */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transform: skew(0deg); /* Keep dropdown links straight */
+}
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:30%;
+}
+.navbar-button {
+  background-color: var(--mk-gray-800);
+  border-left: 3px solid var(--mk-gray-900);
+  font-size:20px;
+  height:50px;
+  color:white;
+  text-decoration: none;
+  transform: skew(-20deg);
+  padding:0px 40px 0px 40px; 
+  display:flex;
+  align-items: center;
+}
+.navbar-button:hover {
+  background-color:var(--mk-gray-700);
+}
+.unskewed{
+  transform:skew(20deg);
+}
+.dropdown-content a:hover {
+  background-color: var(--mk-gray-600);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1; /* Fade in */
+  transform: translateY(0) skew(20deg); /* Slide down */
+}
+.last-button {
+  margin: 0px -20px 0px -5px; 
+  padding-right:60px;
+} 
+
+.whitespace {
+  position: relative;
+  font-size: 0px;
+  padding-bottom: 75px;
+}
+
+.fulllength{
+  width:100%;
+}
+.centered{
+  text-align:center
+}
+
+:root {
+  --mk-gray-900: hsl(220, 30%, 6%);
+  --mk-gray-800: hsl(220, 30%, 12%);
+  --mk-gray-700: hsl(220, 30%, 18%);
+  --mk-gray-600: hsl(220, 30%, 24%);
+  --mk-gray-500: hsl(220, 30%, 30%);
+}

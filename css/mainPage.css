@@ -1,0 +1,59 @@
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project {
+  margin-left:auto; 
+  margin-right:auto;
+  /* border: 1px solid black; */
+  opacity:80%;
+  position:relative;
+  z-index: 3;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  box-shadow: 0 40px 40px rgba(0,0,0,.25);
+  overflow: hidden;
+}
+.boundingbox{
+  width:1000px; 
+  margin:auto;
+}
+
+.project:hover{
+  opacity:100%;
+}
+
+.project_header{
+  text-align:left;
+  background-color: #212121;
+  padding-left: 25px;
+  color:white;
+}
+.th:hover{
+  text-decoration: underline;
+}
+
+.summary {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  max-width:600px;
+}
+
+.projectlink {
+  text-decoration: none;
+  color:black;
+}
+
+.video{
+  height : auto;
+  width:450px;
+}
+@media (max-aspect-ratio: 16/9){
+   .video {
+      height : auto;
+   }
+} 
+
