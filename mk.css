@@ -15,9 +15,8 @@ html, body {
   align-items: center;
   width: 100%; /* Full width */
   height:50px;
-  z-index: 5;
+  z-index: 500;
 }
-
 
 .mainlink {
   color: white;
@@ -26,19 +25,17 @@ html, body {
 
 .mainlink:hover {
   color: lightgray;
+  text-decoration:underline;
 }
 
 .mainlink h2 {
-
   margin: 0;
 }
-
 
 .header {
   background-color: var(--mk-gray-900);
   color: white;
 }
-
 
 .dropdown-content {
   position: absolute;
@@ -53,6 +50,7 @@ html, body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
   transition: height 0.5s ease;
+  line-height:25px;
 }
 
 .dropdown-content a {
@@ -66,6 +64,7 @@ html, body {
   justify-content: flex-end;
   align-items: center;
   width:30%;
+  cursor: pointer;
 }
 .navbar-button {
   background-color: var(--mk-gray-800);
@@ -90,11 +89,11 @@ html, body {
 }
 
 .dropdown:hover ~ .dropdown-content {
-  height:290px;
+  height:350px;
 }
 
 .dropdown-content:hover {
-  height:290px;
+  height:350px;
 }
 .last-button {
   margin: 0px -20px 0px -5px; 
