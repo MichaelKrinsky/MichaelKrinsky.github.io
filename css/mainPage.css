@@ -6,15 +6,15 @@
 .project {
   margin-left:auto; 
   margin-right:auto;
-  /* border: 1px solid black; */
+  background-color: var(--mk-dark-gray-700);
   opacity:80%;
   position:relative;
   z-index: 3;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 50px;
-  box-shadow: 0 40px 40px rgba(0,0,0,.25);
   overflow: hidden;
+  border-radius:50px;
+  border-collapse: collapse;
 }
 .boundingbox{
   width:1000px; 
@@ -27,7 +27,7 @@
 
 .project_header{
   text-align:left;
-  background-color: #212121;
+  background-color: var(--mk-dark-gray-800);
   padding-left: 25px;
   color:white;
 }
@@ -44,7 +44,7 @@
 
 .projectlink {
   text-decoration: none;
-  color:black;
+  color:white;
 }
 
 .video{

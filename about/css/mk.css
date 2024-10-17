@@ -38,6 +38,6 @@ img {
   border-collapse: separate;
   border-radius: 40px;
   padding: 40px;
-  background-color:#E0E0E0;
+  background-color:var(--mk-dark-gray-800);
   box-shadow: 0 40px 40px rgba(0,0,0,.25);
 }
