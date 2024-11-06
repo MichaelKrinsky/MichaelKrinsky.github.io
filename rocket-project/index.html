@@ -1,153 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/mk.css" />
-    <link rel="stylesheet" href="../mk.css" />
-    <title>Michael Krinsky's UCI Rocket Project</title>
-  </head>
+    <head>
+        <link
+            rel="stylesheet"
+            href="css/mk.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../mk.css"
+        />
+        <title>Michael Krinsky's UCI Rocket Project</title>
+    </head>
 
-  <body>
-    <div class="header navbar">
-      <div>
-          <a
-              class="mainlink"
-              href="../index.html"
-          >
-              <h2><div>Michael Krinsky's Project Page</div></h2>
-          </a>
-      </div>
-      <div class="navbar-buttons">
-          <div class="dropdown navbar-button">
-              <a
-                  href="../index.html"
-                  style="color:white; text-decoration:none"
-              >
-                  <div class="unskewed">Projects</div>
-              </a>
-          </div>
-          <div class="dropdown-content">
-              <a href="../rocket-project/index.html"><span>UCI Rocket Project</span></a>
-              <a href="../forge/index.html"><span>UAV Forge</span></a>
-              <a href="../sokoban/index.html"><span>Sokoban AI</span></a>
-              <a href="../grocery-app/index.html"><span>The Grocery App</span></a>
-              <a href="../banking-app/index.html"><span>The Banking App</span></a>
-              <a href="../vision/index.html"
-                  ><span>Machine Learning Vision Project</span></a
-              >
-          </div>
-          <a
-              class="navbar-button"
-              href="../resume/index.html"
-          >
-              <div class="unskewed">Resume</div>
-          </a>
-          <a
-              class="navbar-button last-button"
-              href="../about/index.html"
-          >
-              <div class="unskewed">About</div>
-          </a>
-      </div>
-  </div>
-    <div class="whitespace">
-      <th>-</th>
-    </div>
+    <body>
+        <div class="header navbar">
+            <div>
+                <a
+                    class="mainlink"
+                    href="../index.html"
+                >
+                    <h2><div>Michael Krinsky's Project Page</div></h2>
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <div class="dropdown navbar-button">
+                    <a
+                        href="../index.html"
+                        style="color: white; text-decoration: none"
+                    >
+                        <div class="unskewed">Projects</div>
+                    </a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="../rocket-project/index.html"><span>UCI Rocket Project</span></a>
+                    <a href="../forge/index.html"><span>UAV Forge</span></a>
+                    <a href="../sokoban/index.html"><span>Sokoban AI</span></a>
+                    <a href="../grocery-app/index.html"><span>The Grocery App</span></a>
+                    <a href="../banking-app/index.html"><span>The Banking App</span></a>
+                    <a href="../vision/index.html"><span>Machine Learning Vision Project</span></a>
+                </div>
+                <a
+                    class="navbar-button"
+                    href="../resume/index.html"
+                >
+                    <div class="unskewed">Resume</div>
+                </a>
+                <a
+                    class="navbar-button last-button"
+                    href="../about/index.html"
+                >
+                    <div class="unskewed">About</div>
+                </a>
+            </div>
+        </div>
+        <div class="whitespace">
+            <th>-</th>
+        </div>
 
-    <h1 class="centered" style="font-size: 300%">UCI Rocket Project</h1>
-    <div class="centered">
-      <video controls muted class="video">
-        <source src="launch_reel.mp4" type="video/mp4" />
-      </video>
-      <p class="paragraph">
-        The UCI Rocket project is a team of undergraduate students that is
-        working to break the undergraduate launch record for methalox rockets.
-        After joining the team my sophomore year and successfully launching
-        UCI's first ever methalox rocket, I have become the Chief Engineer for
-        the team.
-      </p>
-    </div>
-    <div class="centered">
-      <img src="team.jpg" alt="UCIRP Team" class="photo" />
-    </div>
-    <p class="paragraph">
-      Before I became Chief Engineer, I was the Lead Avionics Engineer for the
-      avionics team. The avionics team is responsible for researching,
-      developing, and testing the electronic systems and software needed to
-      launch and recover the rocket.
-    </p>
-    <div class="centered">
-      <h1>Ground Station GUI</h1>
-      <img src="gui.png" alt="GUI" class="photo" />
-    </div>
-    <p class="paragraph">
-      After launch, our team immediately began researching and developing our
-      next methalox rocket, MOCH4. Since then, I have been creating our new
-      ground station and control center utilizing web-based technology. The
-      control station uses a React frontend and Flask web service to monitor and
-      control the state of the rocket, as well as run analysis on data we gather
-      during our tests.
-    </p>
-    <div class="centered">
-      <h1>Engine Control Unit</h1>
-      <img src="ECU.jpg" alt="Engine Control Unit" class="photo" />
-    </div>
-    <p class="paragraph">
-      The Engine Control Unit(ECU) was designed to be the brain of our rocket.
-      It used a Teensy microcontroller running Arduino(C++) to control valve
-      states and gather temperature and pressure readings on the rocket. I
-      developed the code the ECU used to interpret signals from our ground
-      station and translate them into actuating valves on our rocket.
-    </p>
-    <div class="centered">
-      <h1>Avionics Flight Sensors</h1>
-      <img src="AFS.jpg" alt="Avionics Flight Systems" class="photo" />
-      <img src="telemetry.png" alt="telemetry" class="photo" />
-    </div>
-    <p class="paragraph">
-      The Avionics Flight System(AFS) is responsible for radio communication
-      during flight and transmitting telemetry data to the ground station. I
-      developed software AFS used to integrate with the ECU and retrieve
-      solenoid valve states, tank pressures, and tank temperatures using I2C.
-    </p>
-    <div class="centered">
-      <h1>CLI</h1>
-      <img src="cli.png" alt="CLI example" class="photo" />
-    </div>
-    <p class="paragraph">
-      I also developed our CLI to allow us to test the rocket without setting up
-      our ground station equipment. The CLI is written in python and uses an
-      internet router connected to the rocket and an open wifi network to allow
-      any laptop to connect to the rocket over wifi. This way, we could actuate
-      valves on the rocket without the need for the switch box.
-    </p>
-    <div class="centered">
-      <table class="info">
-        <tr>
-          <h1>Technologies Used</h1>
-        </tr>
-        <tr>
-          <td style="margin: auto">
-            <ul>
-              <li>Python</li>
-              <li>C++</li>
-              <li>React</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <table style="margin: auto">
-        <tr>
-          <td>
-            <img src="python.png" alt="Python" style="width: 200px" />
-          </td>
-          <td>
-            <img src="cpp.png" alt="C++" style="width: 200px" />
-          </td>
-          <td>
-            <img src="react.png" alt="React" style="width: 200px" />
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
+        <h1
+            class="centered"
+            style="font-size: 300%"
+        >
+            UCI Rocket Project
+        </h1>
+        <div class="centered">
+            <video
+                controls
+                muted
+                class="video"
+            >
+                <source
+                    src="launch_reel.mp4"
+                    type="video/mp4"
+                />
+            </video>
+            <p class="paragraph">
+                The UCI Rocket project is a team of undergraduate students that is working to break
+                the undergraduate launch record for methalox rockets. After joining the team my
+                sophomore year and successfully launching UCI's first ever methalox rocket, I have
+                since become the Chief Engineer for the team.
+            </p>
+        </div>
+        <div class="centered double-picture">
+            <img
+                src="cold_flow_2.jpg"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="static_fire.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            UCI's first ever liquid rocket took us six years to launch, and now I am leading our
+            team to create our next rocket in just two. Since our first launch in Spring of 2023,
+            our team has been designing and testing our next rocket, which we plan to have ready by
+            the Spring of 2025.
+        </p>
+        <div class="centered">
+            <h1>Ground Station GUI</h1>
+            <img
+                src="gui.png"
+                alt="GUI"
+                class="photo"
+                style="min-width: 1100px"
+            />
+        </div>
+        <p class="paragraph">
+            Along with my responsibilities of being Chief Engineer, I am also the lead developer
+            responsible for creating a new ground station and control center for the rocket. The
+            ground station is made of a Python webservice and a React web app that we use to monitor
+            and control the rocket on the pad and during its flight. The React app is also
+            responsible for running analyses on the data we gather during our tests.
+        </p>
+        <div class="centered divider">2022 - 2023</div>
+        <div class="centered">
+            <img
+                src="team.jpg"
+                alt="UCIRP Team"
+                class="photo"
+            />
+        </div>
+        <p class="paragraph">
+            Before I became Chief Engineer, I was the Lead Avionics Engineer for the avionics team.
+            The avionics team is responsible for researching, developing, and testing the electronic
+            systems and software needed to launch and recover the rocket.
+        </p>
+        <div class="centered">
+            <h1>Engine Control Unit</h1>
+            <img
+                src="ECU.jpg"
+                alt="Engine Control Unit"
+                class="photo"
+            />
+        </div>
+        <p class="paragraph">
+            The Engine Control Unit(ECU) was designed to be the brain of our rocket. It used a
+            Teensy microcontroller running Arduino(C++) to control valve states and gather
+            temperature and pressure readings on the rocket. I developed the code the ECU used to
+            interpret signals from our ground station and translate them into actuating valves on
+            our rocket.
+        </p>
+        <div class="centered">
+            <h1>Avionics Flight Sensors</h1>
+            <img
+                src="AFS.jpg"
+                alt="Avionics Flight Systems"
+                class="photo"
+            />
+            <img
+                src="telemetry.png"
+                alt="telemetry"
+                class="photo"
+            />
+        </div>
+        <p class="paragraph">
+            The Avionics Flight System(AFS) is responsible for radio communication during flight and
+            transmitting telemetry data to the ground station. I developed software AFS used to
+            integrate with the ECU and retrieve solenoid valve states, tank pressures, and tank
+            temperatures using I2C.
+        </p>
+        <div class="centered">
+            <h1>CLI</h1>
+            <img
+                src="cli.png"
+                alt="CLI example"
+                class="photo"
+            />
+        </div>
+        <p class="paragraph">
+            I also developed our CLI to allow us to test the rocket without setting up our ground
+            station equipment. The CLI is written in python and uses an internet router connected to
+            the rocket and an open wifi network to allow any laptop to connect to the rocket over
+            wifi. This way, we could actuate valves on the rocket without the need for the switch
+            box.
+        </p>
+        <div class="centered">
+            <table class="info">
+                <tr>
+                    <h1>Technologies Used</h1>
+                </tr>
+                <tr>
+                    <td style="margin: auto">
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>React</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin: auto">
+                <tr>
+                    <td>
+                        <img
+                            src="python.png"
+                            alt="Python"
+                            style="width: 200px"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="cpp.png"
+                            alt="C++"
+                            style="width: 200px"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="react.png"
+                            alt="React"
+                            style="width: 200px"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>
