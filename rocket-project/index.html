@@ -95,39 +95,182 @@
         </div>
         <p class="paragraph">
             UCI's first ever liquid rocket took us six years to launch, and now I am leading our
-            team to create our next rocket in just two. Since our first launch in Spring of 2023,
-            our team has been designing and testing our next rocket, which we plan to have ready by
-            the Spring of 2025.
+            team to create our next rocket in less than three. Since our first launch in Spring of
+            2023, our team has been designing and testing our next rocket, which we plan to have
+            ready by the Winter of 2026.
         </p>
         <div class="centered">
             <h1>Ground Station GUI</h1>
-            <img
-                src="gui.png"
-                alt="GUI"
-                class="photo"
-                style="min-width: 1100px"
+            <div class="centered double-picture">
+             <img
+                src="gui_dashboard.png"
+                alt="Dashoard Page"
+                class="double-photo"
+                style="height:325px"
             />
+            <img
+                src="gui_telemetry.png"
+                alt="Telemetry Page"
+                class="double-photo"
+                style="height:325px"
+            />
+            </div>
         </div>
         <p class="paragraph">
-            Along with my responsibilities of being Chief Engineer, I am also the lead developer
-            responsible for creating a new ground station and control center for the rocket. The
-            ground station is made of a Python webservice and a React web app that we use to monitor
-            and control the rocket on the pad and during its flight. The React app is also
-            responsible for running analyses on the data we gather during our tests.
+            I am also the lead developer for the ground station and control center for the rocket. I
+            created the ground station using a Python web service and a React web app to monitor and
+            control the rocket on the pad and during its flight. It also has built in data
+            visualization tools to analyze results or help diagnose issues we encounter during
+            testing.
         </p>
-        <div class="centered divider">2022 - 2023</div>
+
         <div class="centered">
             <img
                 src="team.jpg"
                 alt="UCIRP Team"
                 class="photo"
+                style="min-width: 800px"
             />
         </div>
         <p class="paragraph">
-            Before I became Chief Engineer, I was the Lead Avionics Engineer for the avionics team.
-            The avionics team is responsible for researching, developing, and testing the electronic
-            systems and software needed to launch and recover the rocket.
+            As Chief Engineer, I led efforts to prepare our rocket for its static fire testing
+            campaign. To reach our target altitude of 25,000 feet, we first needed to validate that
+            the engine and feed system could generate enough thrust and sustain a long enough burn.
+            In the weeks leading up to our first static fire, we performed ten cold flow tests,
+            continuously refining the feed system to maximize our chances of success. Drawing on the
+            experience I gained from developing our previous rocket, I played a key role in
+            identifying and resolving feed system issues, as well as developing new test procedures
+            to verify the system’s performance and reliability.
         </p>
+        <div class="centered divider">2024 - 2025</div>
+        
+        <div class="centered double-picture">
+            <h1>Vertical Test Fire 1</h1>
+            <img
+                src="vtf1-start.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf1-end.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            We performed our first static fire during Week 10 of the Fall quarter, but the test was
+            unsuccessful. Although the engine ignited briefly, it quickly extinguished and ended in
+            an explosive failure.
+        </p>
+        <div class="centered double-picture">
+            <img
+                src="vtf1-engine.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf1-ablative.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            Our failure analysis revealed that the G10 fiberglass used as our ablative material was
+            separating in large chunks instead of gradually vaporizing as intended. We determined
+            that the inner layer of the G10 had delaminated and become lodged in the nozzle,
+            disrupting combustion and causing the engine to fail. In preparation for the next static
+            fire, we replaced the G10 with a canvas phenolic ablative, which offers more consistent
+            and reliable ablation. We also upgraded our injector design to reduce thermal loading on
+            the chamber walls, minimizing the ablative’s burden in case of excessively high
+            combustion temperatures.
+        </p>
+
+        <div class="centered double-picture">
+            <h1>Vertical Test Fire 2</h1>
+            <img
+                src="vtf2-start.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf2-end.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            Our next static fire took place during week 10 of the Winter quarter. This time, the
+            engine successfully ignited and completed a full-duration burn. At first glance, the
+            test appeared to be a success. However, post-fire inspection revealed severe damage: the
+            nozzle had fragmented, and the injector had partially melted.
+        </p>
+        <div class="centered double-picture">
+            <img
+                src="vtf2-engine.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf2-nozzle.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            Our failure analysis pointed to vapor-liquid oscillations within the injector, caused by
+            the distance between the main valves and the combustion chamber. This distance created a
+            section of pipes that was exposed to ambient heat which caused partial vaporization of
+            the propellant when the valves opened, creating unsteady flow. This caused the engine to
+            extinguish and relight, generating a shockwave that destroyed the nozzle and caused a
+            leak in the injector. The melted injector was a symptom of this leak, as it compromised
+            the regenerative cooling of the faceplate, resulting in overheating and melting. To fix
+            this, we relocated the main valves directly next to the injector and redesigned the
+            injector to more evenly spread our propellant orifices across the faceplate for more
+            effective cooling.
+        </p>
+
+        <div class="centered double-picture">
+            <h1>Vertical Test Fire 3</h1>
+            <img
+                src="vtf3-start.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf3-end.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            Our third static fire occurred during week 8 of the Spring quarter. The engine ignited
+            flawlessly, thanks to the improvements we had implemented, but several seconds into the
+            burn, it exploded.
+        </p>
+        <div class="centered double-picture">
+            <img
+                src="vtf3-engine.png"
+                alt="Cold Flow"
+                class="double-photo"
+            />
+            <img
+                src="vtf3-pressures.png"
+                alt="Engine Static Fire"
+                class="double-photo"
+            />
+        </div>
+        <p class="paragraph">
+            Failure analysis revealed significant backflow through the LOX injector holes, causing
+            them to expand and rupture the LOX manifold. The root cause appeared to be either
+            insufficient back pressure from our feed system or the injector design itself allowing
+            propellants to ignite too close to the injector face and heat it to the point of
+            failure. To address these issues, we are developing two new injectors: a
+            showerhead-style injector to serve as a control to confirm our feed system can generate
+            sufficient backpressure, and a redesigned triplet-impinging injector, using copper for
+            better cooling and a steeper impingement angle to move the combustion zone further from
+            the injector plate. Both will be tested at our next static fire during the Fall of 2025.
+        </p>
+        <div class="centered divider">2022 - 2023</div>
         <div class="centered">
             <h1>Engine Control Unit</h1>
             <img
