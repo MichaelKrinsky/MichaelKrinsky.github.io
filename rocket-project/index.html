@@ -9,6 +9,11 @@
             rel="stylesheet"
             href="../mk.css"
         />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../mk_logo.png"
+        />
         <title>Michael Krinsky's UCI Rocket Project</title>
     </head>
 
@@ -18,8 +23,13 @@
                 <a
                     class="mainlink"
                     href="../index.html"
+                    style="display: flex; align-items: center"
                 >
-                    <h2><div>Michael Krinsky's Project Page</div></h2>
+                    <img
+                        src="../mk_logo.png"
+                        alt="Logo"
+                        style="width: 45px; padding: 0px"
+                    />
                 </a>
             </div>
             <div class="navbar-buttons">
@@ -102,18 +112,18 @@
         <div class="centered">
             <h1>Ground Station GUI</h1>
             <div class="centered double-picture">
-             <img
-                src="gui_dashboard.png"
-                alt="Dashoard Page"
-                class="double-photo"
-                style="height:325px"
-            />
-            <img
-                src="gui_telemetry.png"
-                alt="Telemetry Page"
-                class="double-photo"
-                style="height:325px"
-            />
+                <img
+                    src="gui_dashboard.png"
+                    alt="Dashoard Page"
+                    class="double-photo"
+                    style="height: 325px"
+                />
+                <img
+                    src="gui_telemetry.png"
+                    alt="Telemetry Page"
+                    class="double-photo"
+                    style="height: 325px"
+                />
             </div>
         </div>
         <p class="paragraph">
@@ -143,7 +153,7 @@
             to verify the system’s performance and reliability.
         </p>
         <div class="centered divider">2024 - 2025</div>
-        
+
         <div class="centered double-picture">
             <h1>Vertical Test Fire 1</h1>
             <img
@@ -269,6 +279,39 @@
             sufficient backpressure, and a redesigned triplet-impinging injector, using copper for
             better cooling and a steeper impingement angle to move the combustion zone further from
             the injector plate. Both will be tested at our next static fire during the Fall of 2025.
+        </p>
+        <div class="centered divider">2023 - 2024</div>
+        <div class="centered">
+            <img
+                src="av_2023.jpg"
+                alt="Avionics Electronics"
+                class="photo"
+                style="width: 800px"
+            />
+        </div>
+        <p class="paragraph">
+            After the successful launch of our previous rocket, our team began work on a brand-new
+            vehicle. Building on the lessons learned from the shortcomings of our previous avionics
+            system, I led a complete redesign of our avionics electronics focusing on improving
+            capability and fault tolerance. It was essential that these systems be completed within
+            the year to support the propulsion team’s development and testing efforts, as our
+            electronics were integral for validating their own systems.
+        </p>
+        <div class="centered">
+            <img
+                src="gui_2023.png"
+                alt="Ground Control Station"
+                class="photo"
+                style="width: 800px"
+            />
+        </div>
+        <p class="paragraph">
+            I also initiated the development of a new ground control system. The previous setup
+            relied on a physical switch box to actuate valves, which proved to be unreliable and
+            prone to failure. I made the decision to transition entirely to a software-based system
+            to improve reliability and expand our capabilities. The new system uses a Python web
+            service and a React web app to monitor and control the rocket on the pad and during its
+            flight.
         </p>
         <div class="centered divider">2022 - 2023</div>
         <div class="centered">
